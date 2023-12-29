@@ -1,0 +1,44 @@
+:root {
+    --border-radius: 5px;
+    --block-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    --element-box-shadow: 0 1px 3px -2px #9098a9;
+    --block-gap: 40px;
+
+    --color-primary: #F1692F;
+    --color-primary-dark: color-mix(in srgb, black 15%, var(--color-primary));
+    --color-error: #d6152b;
+    --color-error-dark: color-mix(in srgb, black 15%, var(--color-error));
+    --color-submit: #2ABFA1;
+    --color-submit-dark: color-mix(in srgb, black 15%, var(--color-submit));
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url('#{request.contextPath}/resources/image/sky.jpg') fixed;
+    background-size: cover;
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--block-gap);
+}
+
+.student-info {
+    padding: 0 2em;
+    border-radius: var(--border-radius);
+    box-shadow: var(--block-box-shadow);
+    text-align: center;
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.ui-growl {
+    top: 20px !important;
+}
